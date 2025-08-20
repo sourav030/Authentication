@@ -3,6 +3,9 @@ const cors=require('cors')
 const app=express();
 const route=require("./route/AuthRoute");
 const connection=require("./DataBase/dbConnection")
+require("./controller/DeleteUserNotVerify");
+
+
 require('dotenv').config({ path: 'config.env' });
 
 app.use(express.json());
